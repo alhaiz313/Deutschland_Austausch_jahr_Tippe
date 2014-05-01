@@ -1,0 +1,42 @@
+application: macintosh
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+    
+- url: /images
+  static_dir: images
+  
+- url: /del
+  script: zoo.py 
+
+- url: /joke
+  script: joke.py
+    
+- url: /register
+  script: register.py
+    
+- url: /v
+  script: vanish.py
+  
+- url: /first
+  script: first.py
+
+- url: /no
+  script: no.py
+  
+- url: /used
+  script: used.py
+  
+- url: /check
+  script: check.py
+  
+- url: /new
+  script: new.py
+  
+- url: /missing
+  script: missing.py
+
+- url: .*
+  script: deutschland.py
